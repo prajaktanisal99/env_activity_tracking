@@ -1,0 +1,1 @@
+export { verifyAccess } from "./verifyAccess";
