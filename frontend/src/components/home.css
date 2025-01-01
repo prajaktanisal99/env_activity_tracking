@@ -1,0 +1,137 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling on the root */
+}
+
+.homeContainer {
+  background-color: rgb(233, 255, 245);
+  width: 100%;
+  height: 100vh; /* Ensure it occupies the full viewport height */
+  padding: 2%;
+  display: block;
+  color: black;
+  gap: 2%;
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow: auto; /* Allow scrolling for homeContainer if needed */
+}
+
+.homeHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.homeView {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgb(0, 255, 140);
+  background-color: rgb(212, 254, 235);
+  padding: 2%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  overflow: auto; /* Allow scrolling if content exceeds */
+}
+
+.homeLeft,
+.homeRight {
+  border-radius: 12px;
+  padding: 2%;
+  width: 50%;
+}
+
+.homeButtons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2%;
+  padding-bottom: 2%;
+}
+
+.homeButton {
+  background-color: rgb(173, 208, 192);
+  font-size: medium;
+}
+
+.map {
+  background-color: rgb(212, 254, 235);
+}
+
+.showMap {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: rgb(240, 254, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+}
+
+.createActivityForm {
+  background-color: rgb(240, 254, 247);
+  padding: 2%;
+}
+
+.activitiesContainer {
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 2%;
+  max-height: calc(
+    100vh - 200px
+  ); /* Ensures it does not exceed the height of its parent */
+}
+
+.activityCard {
+  background-color: rgb(240, 254, 247);
+  padding: 2%;
+}
+
+.activityHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activityHeadingButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.activityHeading button {
+  background-color: rgb(173, 208, 192);
+  font-size: medium;
+  margin: 2%;
+}
+
+.requestsContainer {
+  background-color: rgb(240, 254, 247);
+  padding: 2%;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: calc(100vh - 200px); /* Prevent overflow of parent container */
+}
+
+.requestDetails {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: auto;
+}
+
+.requestActionButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+.requestActionButtons button {
+  background-color: rgb(173, 208, 192);
+  font-size: medium;
+}
